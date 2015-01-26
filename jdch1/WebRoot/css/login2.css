@@ -1,0 +1,45 @@
+BODY {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND: url(../images/login_05.gif) #faf8e3 repeat-x; COLOR: #0b7f8e; FONT-SIZE: 12px; PADDING-TOP: 0px
+}
+A {
+	COLOR: #2d5d13; CURSOR: pointer
+}
+A:link {
+	COLOR: #2d5d13; CURSOR: pointer
+}
+A:link {
+	COLOR: #2d5d13; CURSOR: pointer
+}
+A:hover {
+	COLOR: #2d5d13; CURSOR: pointer
+}
+A:link {
+	COLOR: #2d5d13; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #2d5d13; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #2d5d13; TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #2d5d13; TEXT-DECORATION: underline
+}
+.no_input {
+	BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px
+}
+.login {
+	PADDING-LEFT: 60px; BACKGROUND: url(../images/login_11.gif) no-repeat
+}
+.login P {
+	MARGIN: 5px
+}
+.login P LABEL {
+	MARGIN-RIGHT: 10px
+}
+.login P INPUT {
+	WIDTH: 200px
+}
+.login DIV {
+	MARGIN-LEFT: 62px
+}

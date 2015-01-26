@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 最大上传文件大小为5MB -->
+	<constant name="struts.multipart.maxSize" value="5242880"/>
+	<package name="struts2" namespace="/" extends="struts-default">
+		<!-- 登录 -->
+		<action name="login_*" class="com.login.action.LoginAction" method="{1}">
+			<result name="main">index.jsp</result>
+			<result name="login">login.jsp</result>
+		</action>
+		<!-- 导航 -->
+		<action name="menu_*" class="com.cms.action.MenuAction" method="{1}">
+			<result name="ok">/school/home_page.jsp</result>
+		</action>
+		<!-- 文章分类 -->
+		<action name="article_*" class="com.cms.action.ArticleAction" method="{1}">
+			<result name="ok">/school/particulars.jsp</result>
+		</action>
+		<!-- 图片管理-->
+		<action name="image_*" class="com.cms.action.ImageAction" method="{1}">
+<!--			<result name="ok">/school/home_page.jsp</result>-->
+			<result name="chinese">/chineseschool/home_page.jsp</result>
+		</action>
+		<!-- 左侧树 -->
+		<action name="left_*" class="com.sysConfig.action.LeftTreeAction" method="{1}">
+		</action>
+		<!-- 会员管理 -->
+		<action name="users_*" class="com.hunt.action.UsersAction" method="{1}">
+		</action>
+		<!-- 留言管理 -->
+		<action name="comment_*" class="com.hunt.action.CommentAction" method="{1}">
+		</action>
+		<!-- 申请管理 -->
+		<action name="apply_*" class="com.hunt.action.ApplyAction" method="{1}">
+		</action>
+	</package>
+</struts>    
